@@ -1,3 +1,4 @@
+
 public class Cards {
 	
 	private int numb;

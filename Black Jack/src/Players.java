@@ -26,13 +26,16 @@ public class Players {
 		}
 		
 		cardsInHand.add(drawnCard);
-		System.out.println("Card Drawn is : " + drawnCard);
+//		System.out.println("Card Drawn is : " + drawnCard);
 	}
-	
+
 	public void showHand(){
+		
+		System.out.println("Your Cards Are...");
 		for (Cards arbCards : cardsInHand){
 			System.out.println(arbCards);
 		}
+		System.out.println();
 	}
 	
 	public int calculateHandScore(){
@@ -46,8 +49,6 @@ public class Players {
 			handScore -= 10;
 			numbAces--;
 		}
-		
-		System.out.println("Your score is : " + handScore);
 		
 		return handScore;
 	}
