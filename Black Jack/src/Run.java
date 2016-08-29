@@ -10,6 +10,7 @@ public class Run {
 		boolean bust = false;
 		int playerScore;
 		int houseScore;
+		Scanner in;
 
 		play: while (keepPlaying) {
 			boolean keepDealing = false;
@@ -36,7 +37,7 @@ public class Run {
 			// ask if the player wants to stand or draw
 			System.out.println("Press 1 for Draw or 2 for Stand");
 
-			Scanner in = new Scanner(System.in);
+			in = new Scanner(System.in);
 			int enteredValue = in.nextInt();
 
 			if (enteredValue == 1) {
@@ -122,7 +123,6 @@ public class Run {
 
 			in = new Scanner(System.in);
 			int input = in.nextInt();
-			in.close();
 
 			if (input == 1) {
 				keepPlaying = true;
